@@ -1,4 +1,4 @@
-package main;
+package com.fish.cl.main;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -7,8 +7,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import listeners.BlockBreak;
-import listeners.BlockPlace;
+import com.fish.cl.listeners.BlockBreak;
+import com.fish.cl.listeners.BlockPlace;
 
 public class ContainerLogger extends JavaPlugin {
 	

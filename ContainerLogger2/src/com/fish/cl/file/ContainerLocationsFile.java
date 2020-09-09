@@ -1,9 +1,9 @@
-package file;
+package com.fish.cl.file;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 
-import main.ContainerLogger;
+import com.fish.cl.main.ContainerLogger;
 
 public class ContainerLocationsFile extends AbstractFile {
 

@@ -1,17 +1,17 @@
-package listeners;
+package com.fish.cl.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.block.BlockBreakEvent;
 
-import main.Constants;
+import com.fish.cl.main.Constants;
 
-public class BlockPlace implements Listener {
+public class BlockBreak implements Listener {
 	
 	@EventHandler
-	public void onBlockPlace(BlockPlaceEvent e) {
+	public void onBlockBreak(BlockBreakEvent e) {
 		Block b = e.getBlock();
 		Material bMat = b.getType();
 		
@@ -24,8 +24,7 @@ public class BlockPlace implements Listener {
 		}
 		
 		if(isContainer) {
-			Constants.clFile.addContainerLocation(b.getWorld().getName(),b.getX(), b.getZ());
+			Constants.clFile.removeContainerLocation(b.getWorld().getName(),b.getX(), b.getZ());
 		}
 	}
-
 }

@@ -1,8 +1,8 @@
-package main;
+package com.fish.cl.main;
 
 import org.bukkit.Material;
 
-import file.ContainerLocationsFile;
+import com.fish.cl.file.ContainerLocationsFile;
 
 public class Constants {
 	

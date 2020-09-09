@@ -1,4 +1,4 @@
-package file;
+package com.fish.cl.file;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import main.ContainerLogger;
+import com.fish.cl.main.ContainerLogger;
 
 public class AbstractFile {
 	protected ContainerLogger plugin;
